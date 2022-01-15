@@ -1,0 +1,19 @@
+
+geodata:
+  test_file : C:/Users/Home/Desktop/server-study/batch/testDir/test.txt
+  test_dir : C:/Users/Home/Desktop/server-study/address/test_dir
+
+  dir: C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/db/match_build
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  profiles: mysql
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mybatis
+    username: root
+    password: 1234
+  batch:
+    job:
+      names: ${job.name:NONE}
